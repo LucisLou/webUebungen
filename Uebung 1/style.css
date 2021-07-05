@@ -1,0 +1,128 @@
+html {
+    background-color: black;
+    font-family: "Gill Sans", sans-serif;
+}
+
+/* Navigation */
+
+nav {
+    background-color: black;
+    padding-left: 2%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 90%;
+}
+nav ul {
+    padding-left: 0;
+    width: 100%;
+}
+nav, a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav, a:hover {
+    color:rgb(206, 206, 206)
+}
+
+/* Main */
+
+main {
+    background-color:rgb(70, 107, 75);
+    color: white;
+    padding: 1%;
+    margin-top: 4%;
+}
+
+/* Image */
+
+img {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 90%;
+}
+
+/* Article */
+
+article {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    font-size: 150%;
+    padding-bottom: 15px;
+    font-weight: bolder;
+}
+
+section {
+    padding-bottom: 10px;
+}
+
+/* Global Classes */
+
+.flex-box {
+    display: flex;
+}
+
+.flex-box-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item {
+    padding: 1%;
+    max-width: 80%;
+}
+
+.pb {
+    padding-bottom: 1rem;
+}
+
+.no-dot {
+    list-style-type: none;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.justify-left {
+    justify-content: left;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.align-left {
+    align-items: left;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.transparent-bg-dark {
+    background-color: rgba(50, 50, 51, 0.274);
+}
