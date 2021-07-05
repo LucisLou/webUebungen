@@ -17,12 +17,12 @@ nav ul {
     padding-left: 0;
     width: 100%;
 }
-nav, a {
+nav a {
     color: whitesmoke;
     text-decoration: none;
 }
 
-nav, a:hover {
+nav a:hover {
     color:rgb(206, 206, 206)
 }
 
