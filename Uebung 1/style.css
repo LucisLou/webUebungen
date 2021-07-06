@@ -20,6 +20,7 @@ nav ul {
 nav a {
     color: whitesmoke;
     text-decoration: none;
+    padding-right: 2rem;
 }
 
 nav a:hover {
@@ -29,18 +30,18 @@ nav a:hover {
 /* Main */
 
 main {
+    display: block;
     background-color:rgb(70, 107, 75);
     color: white;
     padding: 1%;
-    margin-top: 4%;
+    margin-top: 45px;
 }
 
 /* Image */
 
 img {
     display: flex;
-    width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -82,7 +83,7 @@ section {
 
 .flex-item {
     padding: 1%;
-    max-width: 80%;
+    max-width: 50%;
 }
 
 .pb {
@@ -125,4 +126,30 @@ section {
 
 .transparent-bg-dark {
     background-color: rgba(50, 50, 51, 0.274);
+}
+
+@media screen and (max-width: 720px) {
+    main {
+        font-size: smaller;
+    }
+
+    article {
+        width: auto;
+    }
+
+    section {
+        width: auto;
+    }
+
+    .flex-box {
+        width: auto;
+    }
+
+    .flex-box-row {
+        width: auto;
+    }
+
+    .flex-item {
+        width: auto;
+    }
 }
