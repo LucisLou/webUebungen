@@ -100,8 +100,8 @@ aside {
 }
 
 .flex-item {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 2%;
+    padding-left: 2%;
 }
 
 dt {
@@ -204,6 +204,14 @@ dfn {
 
 .transparent-bg-dark {
     background-color: rgba(50, 50, 51, 0.274);
+}
+
+.float-left {
+    float: left;
+    max-width: 40%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-right: 1rem;
 }
 
 @media screen and (max-width: 720px) {
