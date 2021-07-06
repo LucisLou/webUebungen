@@ -68,7 +68,7 @@ article {
 }
 
 header {
-    font-size: 150%;
+    font-size: 170%;
     padding-bottom: 15px;
     font-weight: bolder;
 }
@@ -115,7 +115,7 @@ dd {
 
 hr {
     max-width: 80%;
-    color:rgb(150, 196, 156)
+    color:rgb(150, 196, 156);
 }
 
 blockquote {
