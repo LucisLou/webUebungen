@@ -38,8 +38,8 @@ nav a:hover {
 
 main {
     display: block;
-    background-color:rgb(70, 107, 75);
-    color: white;
+    background-color:whitesmoke;
+    color: rgb(0, 0, 0);
     padding: 1%;
     margin-top: 45px;
 }
@@ -50,6 +50,8 @@ img {
     display: flex;
     max-width: 100%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Footer */
@@ -84,14 +86,13 @@ aside {
     padding-left: 1rem;
     margin-left: 1rem;
     width: 40%;
-    border-left: 2px solid grey;
-
 }
 
 /* Global Classes & Elements */
 
 .flex-box {
     display: flex;
+    flex-direction: column;
 }
 
 .flex-box-row {
@@ -102,15 +103,6 @@ aside {
 .flex-item {
     padding-right: 2%;
     padding-left: 2%;
-}
-
-dt {
-    font-weight: bold;
-}
-
-dd {
-    color: rgb(219, 219, 219);
-    padding-bottom: 1rem;
 }
 
 hr {
@@ -127,7 +119,19 @@ cite {
 }
 
 dfn {
-    color: burlywood;
+    color: rgb(133, 52, 6);
+}
+
+.ptb {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.img-desc {
+    font-size: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .small {
@@ -195,10 +199,6 @@ dfn {
 
 .rounded {
     border-radius: 5px;
-}
-
-.transparent-bg-dark {
-    background-color: rgba(50, 50, 51, 0.274);
 }
 
 .float-left {
