@@ -44,7 +44,7 @@ main {
     margin-top: 45px;
 }
 
-/* Image */
+/* Image, Video & iFrame */
 
 img {
     display: flex;
@@ -52,11 +52,29 @@ img {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+video {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    display: flex;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Footer */
 
 footer {
+    display: flex;
     background-color: black;
     color: whitesmoke;
     font-size: 90%;
@@ -88,7 +106,7 @@ aside {
     width: 40%;
 }
 
-/* Global Classes & Elements */
+/* Flex boxes */
 
 .flex-box {
     display: flex;
@@ -105,6 +123,14 @@ aside {
     padding-left: 2%;
 }
 
+.flex-item-footer {
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 50%;
+}
+
+/* Global Classes & Elements */
+
 hr {
     max-width: 80%;
 }
@@ -120,6 +146,10 @@ cite {
 
 dfn {
     color: rgb(133, 52, 6);
+}
+
+h1 {
+    margin-top: 4rem;
 }
 
 .ptb {
@@ -159,7 +189,13 @@ dfn {
 }
 
 .bordered{
-    border: 2px solid white;
+    border: 2px solid grey;
+}
+
+.dark-bg {
+    background-color: rgba(204, 179, 179, 0.432);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(150, 169, 169, 0.432)
 }
 
 .no-dot {
@@ -175,6 +211,15 @@ dfn {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.center-top-bottom {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.justify-right {
+    justify-content: right;
 }
 
 .justify-left {
@@ -197,6 +242,22 @@ dfn {
     align-items: left;
 }
 
+.align-right {
+    align-items: right;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
 .rounded {
     border-radius: 5px;
 }
@@ -210,8 +271,13 @@ dfn {
 }
 
 @media screen and (max-width: 720px) {
-    main, nav, footer {
+    main, nav {
         font-size: smaller;
+    }
+
+    footer {
+        font-size: smaller;
+        display: block;
     }
 
     article {
@@ -236,4 +302,14 @@ dfn {
         width: auto;
         flex-wrap: wrap;
     }
+
+    .flex-item-footer {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+    
 }
