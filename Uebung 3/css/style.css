@@ -1,5 +1,4 @@
 html {
-    background-color: black;
     font-family: "Gill Sans", sans-serif;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -33,6 +32,38 @@ nav a {
 nav a:hover {
     color:rgb(206, 206, 206)
 }
+
+
+/* Header - Hero Image */
+
+header {
+    display: block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/header_axolotl.jpg");
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 45rem;
+    padding-top: 45rem;
+}
+
+.hero-image {
+    background-image: url("img/axolotl-hero.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
 
 /* Main */
 
@@ -129,95 +160,6 @@ aside {
     width: 50%;
 }
 
-/* Global Classes & Elements */
-
-hr {
-    max-width: 80%;
-}
-
-blockquote {
-    font-style: italic;
-}
-
-cite {
-    font-weight: bold;
-    color: rgb(219, 219, 219);
-}
-
-dfn {
-    color: rgb(133, 52, 6);
-}
-
-h1 {
-    margin-top: 4rem;
-}
-
-.ptb {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.img-desc {
-    font-size: 70%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.small {
-    max-width: 30%;
-}
-
-.mid {
-    max-width: 50%;
-}
-
-.big {
-    max-width: 80%;
-}
-
-.pb {
-    padding-bottom: 1rem;
-}
-
-.mb {
-    margin-bottom: 1rem;
-}
-
-.mt {
-    margin-top: 1rem;
-}
-
-.bordered{
-    border: 2px solid grey;
-}
-
-.dark-bg {
-    background-color: rgba(204, 179, 179, 0.432);
-    border-radius: 5px;
-    box-shadow: 2px 2px 4px rgba(150, 169, 169, 0.432)
-}
-
-.no-dot {
-    list-style-type: none;
-}
-
-.strong {
-    font-weight: bold;
-}
-
-.center {
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.center-top-bottom {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 .justify-right {
     justify-content: right;
 }
@@ -266,6 +208,99 @@ h1 {
     justify-content: flex-end;
 }
 
+.stretch {
+    justify-content: stretch;
+}
+
+/* Global Classes & Elements */
+
+hr {
+    max-width: 80%;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+cite {
+    font-weight: bold;
+    color: rgb(102, 102, 102);
+}
+
+dfn {
+    color: rgb(133, 52, 6);
+}
+
+h1 {
+    margin-top: 4rem;
+}
+
+.ptb {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.img-desc {
+    font-size: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small {
+    max-width: 30%;
+}
+
+.mid {
+    max-width: 50%;
+}
+
+.big {
+    max-width: 70%;
+}
+
+.pb {
+    padding-bottom: 1rem;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}
+
+.mt {
+    margin-top: 1rem;
+}
+
+.bordered {
+    border: 2px solid grey;
+}
+
+.dark-bg {
+    background-color: rgba(204, 179, 179, 0.432);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(150, 169, 169, 0.432)
+}
+
+.no-dot {
+    list-style-type: none;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.center {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-top-bottom {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .rounded {
     border-radius: 5px;
 }
@@ -276,6 +311,10 @@ h1 {
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding-right: 1rem;
+}
+
+.half {
+    width: 50%;
 }
 
 @media screen and (max-width: 720px) {
