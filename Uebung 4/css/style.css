@@ -1,7 +1,5 @@
 html {
-    background-image: url("doe.jpg");
-    background-size: cover;
-    
+    background-color: rgb(18, 66, 30);
     font-family: "Gill Sans", sans-serif;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -13,13 +11,14 @@ html {
 
 /* Header - Hero Image */
 
-header {
-    background-image: url(doe.jpg);
+.hero-image {
+    background-image: url("doe.jpg");
     max-width: 100%;
-    height: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .hero-text {
@@ -31,12 +30,38 @@ header {
     color: white;
 }
 
-nav {
+/* Navigation */
 
+nav {
+    background-color: rgb(18, 66, 30);
+    padding-left: 2%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    top: 0;
+    width: 100%;
+    font-size: 90%;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 0;
+    width: 100%;
+}
+
+nav ul a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 2rem;
+}
+
+nav a:hover {
+    color:rgb(206, 206, 206)
 }
 
 main {
-
+    padding: 1rem;
+    background-color: aliceblue;
 }
 
 article {
@@ -44,9 +69,95 @@ article {
 }
 
 section {
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
 
+}
+
+aside {
+    float: right;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    width: 40%;
+}
+
+img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+table {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(102, 194, 163);
+}
+
+tr, td, th {
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Flex Box */
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Classes */
+
+.no-dot {
+    list-style-type: none;
+}
+
+.pb {
+    padding-bottom: 1rem;
+}
+
+.pb-b {
+    padding-bottom: 2rem;
+}
+
+.text-b {
+    font-size: 120%;
+}
+
+.img-desc {
+    font-size: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vertical {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+
+.hidden {
+    display: hidden;
+    border: none;
 }
