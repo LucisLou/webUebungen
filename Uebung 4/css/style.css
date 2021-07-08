@@ -60,12 +60,11 @@ nav a:hover {
 }
 
 main {
-    padding: 1rem;
     background-color: aliceblue;
 }
 
 article {
-
+    padding: 2rem;
 }
 
 section {
@@ -74,14 +73,17 @@ section {
 }
 
 footer {
-
+    display: flex;
+    background-color: rgb(18, 66, 30);
+    color: whitesmoke;
+    font-size: 90%;
 }
 
 aside {
     float: right;
     padding-left: 1rem;
     margin-left: 1rem;
-    width: 40%;
+    max-width: 40%;
 }
 
 img {
@@ -92,6 +94,10 @@ img {
     margin-right: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+dl {
+    padding: 1rem;
 }
 
 dt {
@@ -120,11 +126,34 @@ tr, td, th {
     padding: 1rem;
 }
 
+form {
+    background-color: rgba(25, 107, 80, 0.24);
+    border-radius: 5px;
+}
+
+form div {
+    padding-bottom: 1rem;
+}
+
+input {
+    width: 50%;
+    max-width: 50%;
+}
+
+textarea{
+    width: 50%;
+}
+
 /* Flex Box */
 
 .flex-box {
     display: flex;
     flex-direction: column;
+}
+
+.flex-box-row {
+    display: flex;
+    flex-direction: row;
 }
 
 /* Classes */
@@ -160,4 +189,21 @@ tr, td, th {
 .hidden {
     display: hidden;
     border: none;
+}
+
+.centered-box {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.space-between {
+    justify-items: space-between;
+}
+
+.pdrten {
+    padding-right: 10rem;
 }
