@@ -61,6 +61,7 @@ nav a:hover {
 
 main {
     background-color: aliceblue;
+    padding: 2%;
 }
 
 article {
@@ -68,8 +69,7 @@ article {
 }
 
 section {
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
 }
 
 footer {
@@ -81,9 +81,10 @@ footer {
 
 aside {
     float: right;
-    padding-left: 1rem;
-    margin-left: 1rem;
-    max-width: 40%;
+    padding-left: 10px;
+    margin-left: 10px;
+    max-width: 50%;
+    height: auto;
 }
 
 img {
@@ -105,30 +106,31 @@ dt {
 }
 
 table {
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
-
+    width: 100%;
+    border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
-
-    border-collapse: collapse;
 }
 
 th {
     background-color: rgb(102, 194, 163);
 }
 
+tr {
+    max-width: 80%;
+}
+
 tr, td, th {
     border: 1px solid black;
     text-align: center;
-    width: 100%;
     padding: 1rem;
+
 }
 
 form {
     background-color: rgba(25, 107, 80, 0.24);
     border-radius: 5px;
+    max-width: 80%;
 }
 
 form div {
@@ -136,12 +138,11 @@ form div {
 }
 
 input {
-    width: 50%;
-    max-width: 50%;
+    width: 100%;
 }
 
 textarea{
-    width: 50%;
+    width: 100%;
 }
 
 /* Flex Box */
@@ -192,6 +193,8 @@ textarea{
 }
 
 .centered-box {
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -206,4 +209,8 @@ textarea{
 
 .pdrten {
     padding-right: 10rem;
+}
+
+.half {
+    max-width: 50%;
 }
