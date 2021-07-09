@@ -9,27 +9,6 @@ html {
     -webkit-hyphens: auto;
 }
 
-/* Header - Hero Image */
-
-.hero-image {
-    background-image: url("doe.jpg");
-    max-width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
-
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
 /* Navigation */
 
 nav {
@@ -59,17 +38,40 @@ nav a:hover {
     color:rgb(206, 206, 206)
 }
 
+/* Header - Hero Image */
+
+.hero-image {
+    background-image: url("doe.jpg");
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
 main {
     background-color: aliceblue;
     padding: 2%;
+    max-width: 100%;
 }
 
 article {
-    padding: 2rem;
+    width: 100%;
 }
 
 section {
     flex-direction: column;
+    width: 100%;
 }
 
 footer {
@@ -83,7 +85,7 @@ aside {
     float: right;
     padding-left: 10px;
     margin-left: 10px;
-    max-width: 50%;
+    max-width: 60%;
     height: auto;
 }
 
@@ -127,6 +129,10 @@ tr, td, th {
 
 }
 
+button a {
+    text-decoration: none;
+}
+
 form {
     background-color: rgba(25, 107, 80, 0.24);
     border-radius: 5px;
@@ -141,7 +147,7 @@ input {
     width: 100%;
 }
 
-textarea{
+textarea {
     width: 100%;
 }
 
@@ -178,14 +184,12 @@ textarea{
 .img-desc {
     font-size: 90%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .vertical {
     writing-mode: vertical-rl;
     text-orientation: upright;
-  }
+}
 
 .hidden {
     display: hidden;
@@ -197,6 +201,23 @@ textarea{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin-left-25 {
+    margin-left: 25%;
+}
+
+.padding-left-25 {
+    padding-left: 25%;
+}
+
+.padding-left-5 {
+    padding-left: 5%;
 }
 
 .center {
