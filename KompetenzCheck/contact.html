@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompetenzcheck Web Woche 1</title>
+
+    <link rel="stylesheet" href="style_contact.css">
+</head>
+<body>
+    <nav>
+
+    </nav>
+    <main>
+        <article>
+            <section>
+                <form method="get" action="output.html">
+                    <label for="vorname">Vorname*:</label>
+                    <br>
+                    <input type="text" name="vorname" id="vorname" required>
+                    <br>
+                    <label for="vorname">Nachname*:</label>
+                    <br>
+                    <input type="text" name="nachname" id="nachname" required>
+                    <br>
+                    <label for="adresse">Adresse:</label>
+                    <br>
+                    <input type="text" name="adresse" id="adresse">
+                    <br>
+                    <label for="tel">Telefon:</label>
+                    <br>
+                    <input type="tel" name="telefon" id="telefon">
+                    <br>
+                    <label for="email">Email:*</label>
+                    <br>
+                    <input type="email" name="email" id="email">
+                    <br>
+                    <label for="nachricht">Ihre Nachricht</label>
+                    <textarea cols="20" rows="5"></textarea>
+                    <br>
+                    <div class="column left">
+                        
+                        <label for="lieblingstier">Wähle dein Lieblingshaustier:</label>
+                        <div class="row">
+                            <input type="radio" name="lieblingstier" id="drache" value="drache">
+                            <label for="drache">Drache</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" name="lieblingstier" id="trex" value="trex">
+                            <label for="trex">T-Rex</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <label for="petfood">Was isst dein Haustier gerne? </label>
+                        <select name="petfood" id="petfood">
+                            <option value="1">Regenbögen</option>
+                            <option value="2">Sterne</option>
+                            <option value="3">Luft</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" class="button" value="Absenden">
+                    </div>
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
