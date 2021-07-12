@@ -16,79 +16,97 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <header class="flex-box">
+        <p class="headertext"><strong>CODERS' Zoo</strong></p>
+    </header>
     <main>
-        <article>
-            <section>
-                <h1>Contact us!</h1>
+        <article class="flex-box">
+            <section class="centered">
+                <h1 class="big-title">Contact us!</h1>
             </section>
         </article>
-        <article>
-            <form method="get" action="output.html" class="flex-box centered-box center">
-                <div>
-                    <label for="name">Name</label>
-                    <br>
-                    <input type="text" name="name" id="vorname">
-                </div>
-                <div>
-                    <label for="email">E-Mail</label>
-                    <br>
-                    <input type="email" name="email" id="email" value="example@examplemail.com">
-                </div>
-                <div>
-                    <label for="visitdate">Visit Date & Time</label>
-                    <br>
-                    <input type="date" name="visitdate" id="visitdate">
-                    <input type="time" name="visittime" id="visittime">
-                </div>
-                <div>
-                    <label for="rate">Rate your visit!</label>
-                    <br>
-                    <input type="range" name="rate" id="rate">
-                </div>
-                <div>
-                    <p>Would you recommend us?</p>
-                    <input type="radio" name="rec" id="recyes" value="yes">
-                    <label for="recyes">Yes</label>
-                    <input type="radio" name="rec" id="recno" value="no">
-                    <label for="recno">No</label>
-                </div>
-                <div>
-                    <label for="favorite">Which animal species did you like the most?</label>
-                    <br>
-                    <input type="text" list="favanimal" name="favorite" id="favorite">
-                    <datalist id="favanimal">
-                        <option value="Mammal">
-                        <option value="Bird">
-                        <option value="Fish">
-                    </datalist>
-                </div>
-                <div>
-                    <label for="comment">Comment?</label>
-                    <br>
-                    <textarea rows="5" cols="20" name="comment" id="comment">
-                        Type in your comment.
-                    </textarea>
-                </div>
-                <div>
-                    <label for="visittype">Type of Visit</label>
-                    <br>
-                    <select name="visittype" id="visittype">
-                        <option value="1">Family Visit</option>
-                        <option value="2">Solo Visit</option>
-                        <option value="3">Group Visit</option>
-                        <option value="4">Visit with Friends</option>
-                        <option value="5">Other</option>
-                    </select>
-                </div>
-                <div>
-                    <input type="submit"> <input type="reset">
-                </div>
-            </form>
+        <article class="flex-box">
+            <section class="centered">
+                <form method="get" action="output.html" class="center">
+                    <div>
+                        <label for="name">Name*</label>
+                        <br>
+                        <input type="text" name="name" id="vorname" required>
+                    </div>
+                    <div>
+                        <label for="email">E-Mail*</label>
+                        <br>
+                        <input type="email" name="email" id="email" value="example@examplemail.com" required>
+                    </div>
+                    <div>
+                        <label for="visitdate">Visit Date & Time</label>
+                        <br>
+                        <div class="flex-box-row centered-box">
+                            <input type="date" name="visitdate" id="visitdate">
+                            <input type="time" name="visittime" id="visittime">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="rate">Rate your visit!</label>
+                        <br>
+                        <input type="range" name="rate" id="rate">
+                    </div>
+                    <div>
+                        <p>Would you recommend us?</p>
+                        <div class="flex-box-row centered-box">
+                            <input type="radio" name="rec" id="recyes" value="yes">
+                            <label for="recyes" class="padding-right-5">Yes</label>
+                            <input type="radio" name="rec" id="recno" value="no">
+                            <label for="recno">No</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="favanimal">Which animal species did you like the most?</label>
+                        <br>
+                        <input type="text" list="favanimal" name="favorite" id="favorite">
+                        <datalist id="favanimal">
+                            <option value="Mammal">Mammal</option>
+                            <option value="Bird">Bird</option>
+                            <option value="Fish">Fish</option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="comment">Comment?</label>
+                        <br>
+                        <textarea rows="5" cols="20" name="comment" id="comment">Type in your comment.</textarea>
+                    </div>
+                    <div>
+                        <label for="visittype">Type of Visit</label>
+                        <br>
+                        <select name="visittype" id="visittype">
+                            <option value="1">Family Visit</option>
+                            <option value="2">Solo Visit</option>
+                            <option value="3">Group Visit</option>
+                            <option value="4">Visit with Friends</option>
+                            <option value="5">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit"> <input type="reset">
+                    </div>
+                </form>
+            </section>
         </article>
     </main>
     <footer>
+        <div>
+            <p><strong>Karima Hussein</strong></p>
+            <p>Mustermenschstraße 12</p>
+            <p>1337 Leetburg</p>
+        </div>
 
-    </footer>
-    
+        <div>
+            <ul class="no-dot">
+                <li><a href="#home" class="text-b"><strong>Home</strong></a></li>
+                <li><a href="pages/info.html">Our Animals</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer> 
 </body>
 </html>
