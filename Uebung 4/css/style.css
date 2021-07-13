@@ -161,6 +161,10 @@ tbody tr:nth-child(even) {
     background-color: rgb(167, 236, 213);
 }
 
+tbody tr:nth-child(odd) {
+    background-color: aliceblue;
+}
+
 /* Forms */
 
 form {
@@ -298,7 +302,11 @@ h1:first-letter, h2:first-letter {
 }
 
 .space-between {
-    justify-items: space-between;
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
 }
 
 .pdrten {
@@ -307,4 +315,55 @@ h1:first-letter, h2:first-letter {
 
 .half {
     max-width: 50%;
+}
+
+.overflow {
+    overflow-x: auto;
+}
+
+.roman {
+    list-style-type: upper-roman;
+}
+
+.square {
+    list-style-type: square;
+}
+
+button {
+    background-color: seagreen;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    transition: 2s;
+    transform:rotate(360deg);
+}
+
+button a, button a:visited {
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .half {
+        max-width: 100%;
+    }
+
+    iframe {
+        max-width: 90%;
+    }
+
+    .flex-box {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .flex-box-row {
+        flex-wrap: wrap;
+        width: 100%;
+    }
 }
