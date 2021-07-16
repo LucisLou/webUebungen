@@ -190,3 +190,19 @@ article section {
     }
 
 }
+
+@media print {
+
+    a[href]::after {
+        content: " ["attr(href)"]";
+    }
+
+    body {
+        font-family:'Times New Roman', Times, serif;
+        font-size: 12pt;
+    }
+
+    img {
+        display: none;
+    }
+}

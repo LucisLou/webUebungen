@@ -26,59 +26,50 @@
                 <h1 class="big-title">Contact us!</h1>
             </section>
         </article>
-        <article class="flex-box">
-            <section class="centered">
-                <form method="get" action="output.html" class="center">
-                    <div>
-                        <label for="name">Name*</label>
-                        <br>
-                        <input type="text" name="name" id="vorname" required>
-                    </div>
-                    <div>
-                        <label for="email">E-Mail*</label>
-                        <br>
-                        <input type="email" name="email" id="email" value="example@examplemail.com" required>
-                    </div>
-                    <div>
-                        <label for="visitdate">Visit Date & Time</label>
-                        <br>
-                        <div class="flex-box-row centered-box">
+        <article>
+                <form method="get" action="output.html" class="form">
+                    <ul>
+                        <li>
+                            <label for="name">Name*</label>
+                            <input type="text" name="name" id="vorname" required>
+                        </li>
+                        <li>
+                            <label for="email">E-Mail*</label>
+                            <input type="email" name="email" id="email" value="example@examplemail.com" required>
+                        </li>
+                        <li>
+                            <label for="visitdate">Visit Date & Time</label>
+                            <div>
                             <input type="date" name="visitdate" id="visitdate">
                             <input type="time" name="visittime" id="visittime">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="rate">Rate your visit!</label>
-                        <br>
-                        <input type="range" name="rate" id="rate">
-                    </div>
-                    <div>
-                        <p>Would you recommend us?</p>
-                        <div class="flex-box-row centered-box">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="rate">Rate your visit!</label>
+                            <input type="range" name="rate" id="rate">
+                        </li>
+                        <li>
+                            <p>Would you recommend us?</p>
                             <input type="radio" name="rec" id="recyes" value="yes">
                             <label for="recyes" class="padding-right-5">Yes</label>
                             <input type="radio" name="rec" id="recno" value="no">
                             <label for="recno">No</label>
-                        </div>
-                    </div>
-                    <div>
-                        <label for="favanimal">Which animal species did you like the most?</label>
-                        <br>
-                        <input type="text" list="favanimal" name="favorite" id="favorite">
-                        <datalist id="favanimal">
-                            <option value="Mammal">Mammal</option>
-                            <option value="Bird">Bird</option>
-                            <option value="Fish">Fish</option>
-                        </datalist>
-                    </div>
-                    <div>
-                        <label for="comment">Comment?</label>
-                        <br>
-                        <textarea rows="5" cols="20" name="comment" id="comment">Type in your comment.</textarea>
-                    </div>
-                    <div>
+                        </li>
+                        <li>
+                            <label for="favanimal">Which animal species did you like the most?</label>
+                            <input type="text" list="favanimal" name="favorite" id="favorite">
+                            <datalist id="favanimal">
+                                <option value="Mammal">Mammal</option>
+                                <option value="Bird">Bird</option>
+                                <option value="Fish">Fish</option>
+                            </datalist>
+                        </li>
+                        <li>
+                            <label for="comment">Comment?</label>
+                            <textarea rows="5" cols="20" name="comment" id="comment">Type in your comment.</textarea>
+                        </li>
+                        <li>
                         <label for="visittype">Type of Visit</label>
-                        <br>
                         <select name="visittype" id="visittype">
                             <option value="1">Family Visit</option>
                             <option value="2">Solo Visit</option>
@@ -86,12 +77,15 @@
                             <option value="4">Visit with Friends</option>
                             <option value="5">Other</option>
                         </select>
-                    </div>
-                    <div>
-                        <input type="submit"> <input type="reset">
-                    </div>
+                        </li>
+                        <li>
+                            <button type="submit">Send</button>
+                        </li>
+                        <li>
+                            <button type="reset">Reset</button>
+                        </li>
+                    </ul>
                 </form>
-            </section>
         </article>
     </main>
     <footer>
