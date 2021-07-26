@@ -2,7 +2,7 @@
 
 ## Week 1
 
-I've already had a lot of basic knowledge on creating websites and styling them as well as using flex boxes. 
+I've already had a lot of basic knowledge on creating websites and styling them as well as using flexboxes. 
 There wasn't much to learn for me since I already knew all there is to know for week 1 and 2 (Basics HTML und CSS 1 & 2).
 
 #### I finished the competence check of week 1 with following main points:
