@@ -1,4 +1,4 @@
-# Skill diary - Web
+# Skill Diary - Web
 
 ## Week 1
 
