@@ -9,7 +9,7 @@ There wasn't much to learn for me since I already knew all there is to know for 
 * tables
 * flexboxes
 * :nth-child
-* forms in its entirety
+* forms
 
 ## Week 2
 
