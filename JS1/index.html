@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS1 Exercises</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="greetingPersonalized()">
+    <header>
+        <h1>This is the JavaScript learning page</h1>
+        <h2 id="persGreeting"></h2>
+    </header>
+    
+    <article>
+        <button id="loginButton" onclick="login()">Login</button>
+    </article>
+
+    <article>
+        <p>Try out some cool buttons below:</p>
+        <button id="Greeting" onclick="greet()">Click Me!</button>
+        <p id="buttonText"></p>
+        <button id="Greeting" onclick="threeVariables()">Click me, too!</button>
+    </article>
+
+    <article>
+        <h2>Wanna play a maths game?</h2>
+        <button id="gameButton" onclick="game()" class="mathButton">Let's Play!</button>
+    </article>
+
+    <article>
+        <h2>Can I ask you some questions?</h2>
+        <button id="questionsButton" onclick="aboutYou()">Yeah, sure!</button>
+        <p id="aboutMeMessage"></p>
+        <p id="aboutMe"></p>
+    </article>
+
+    <article>
+        <h2>Getting a bit more complex! Time for 2D Arrays!</h2>
+        <h3>Time to insert data of 3 persons:</h3>
+        <button id="personsButton" onclick="personData()">Click Me!</button>
+        <p id="afterPersonData"></p>
+        <button id="readPersonButton" onclick="readPerson()">Press Me!</button>
+    </article>
+
+    <article>
+        <h2>We're still not done, time for the for-loops which I already used but okay.</h2>
+        <button id="notdone" onclick="moreArrayStuff()">You know the drill</button>
+    </article>
+
+    <article>
+        <h2>We're STILL not done with arrays, time for the while-loops.</h2>
+        <button id="notdone2" onclick="moreArrayStuffWhile()">You know the drill 2</button>
+    </article>
+
+    <article>
+        <h2>Almost there... Ready?</h2>
+        <button id="reallynotdone" onclick="giveBackDouble()">Bop it</button>
+    </article>
+
+    <article>
+        <h2>The same, but different?</h2>
+        <button id="reallynotdone2" onclick="readUserNumber()">Twist it</button>
+    </article>
+
+    <article>
+        <h2>The last, but not least</h2>
+        <button id="finallydone" onclick="multiplyArray()">Squeeze it</button>
+    </article>
+
+    <footer>
+        <p>JavaScript really is much easier if you know Java.</p>
+    </footer>
+
+    <script src="index.js">
+
+    </script>
+    
+</body>
+</html>
