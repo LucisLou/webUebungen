@@ -17,7 +17,47 @@ header {
     color: white;
     width: 100%;
     top: 0;
-    margin-bottom: 5px;
+}
+
+nav {
+    background-color: darkcyan;
+    color: white;
+
+    position: sticky;
+    top: 0;
+    padding-left: 10px;
+
+    text-align: left;
+
+    display: flex;
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+
+    padding: 0;
+}
+
+nav li {
+    padding-left: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #F2A71B;
+}
+
+article {
+    padding: 10 px;
 }
 
 footer {
@@ -43,6 +83,7 @@ button {
     font-weight: bold;
     box-shadow: 0 9px rgb(0, 85, 85);
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 button:hover {
@@ -74,3 +115,5 @@ button:active {
 #readPersonButton {
     display: none;
 }
+
+

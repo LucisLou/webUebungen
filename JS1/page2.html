@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exercises 1 - Day 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>This is the JavaScript learning page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Day 1 (Home)</a></li>
+                <li><a href="page2.html">Day 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <p id="el-1">This is a pragraph element!</p>
+        <button onclick="changeText()">Change its text!</button>
+        <br>
+        <p id="el-2" onmouseover="worry()" onmouseout="noWorry()">This is another paragraph element, it's a bit scared of the mouse...</p>
+        <br>
+        <h2 id="el-3" oncontextmenu="shrink()">This is a headline... right-click it!</h2>
+        <br>
+        <p id="el-4" onmousedown="shrink2()" onmouseup="revert()">This element doesn't like clicks in general...</p>
+    </article>
+    <footer>
+
+    </footer>
+    <script src="page2.js"></script>
+</body>
+</html>
