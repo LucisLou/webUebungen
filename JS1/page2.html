@@ -7,6 +7,19 @@
     <title>JS Exercises 1 - Day 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<style>
+    table {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    td, th {
+        border: 1px solid black;
+    }
+</style>
+
 <body>
     <header>
         <h1>This is the JavaScript learning page</h1>
@@ -14,6 +27,8 @@
             <ul>
                 <li><a href="index.html">Day 1 (Home)</a></li>
                 <li><a href="page2.html">Day 2</a></li>
+                <li><a href="page31.html">Day 3</a></li>
+                <li><a href="page4.html">Day 4 </a></li>
             </ul>
         </nav>
     </header>
@@ -27,8 +42,43 @@
         <br>
         <p id="el-4" onmousedown="shrink2()" onmouseup="revert()">This element doesn't like clicks in general...</p>
     </article>
-    <footer>
 
+    <article style="display: flex; flex-direction: column; align-items: center;">
+        <div id="div-1" style="border: 1px solid black; width: 80%;">
+            This is the outer layer.
+            <div id="div-2" style="border: 1px solid black; width: 80%;">
+                This is the second layer.
+                <div id="div-3" style="border: 1px solid black; width: 80%;">
+                    This is the third layer.
+                    <div id="div-4" style="border: 1px solid black; width: 80%;">
+                        This is the innermost layer.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <br>
+        <p>You may click on the table items below and see what happens!</p>
+        <br>
+        <table id="table">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Poyo</td>
+                <td>Hiya</td>
+            </tr>
+            <tr>
+                <td>Today You</td>
+                <td>Tomorrow Me</td>
+            </tr>
+        </table>
+    </article>
+    <footer>
+        <p>This is a footer.</p>
     </footer>
     <script src="page2.js"></script>
 </body>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Exercises 1 - Day 4</title>
+</head>
+<body>
+    <header>
+        <h1>This is the JavaScript learning page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Day 1 (Home)</a></li>
+                <li><a href="page2.html">Day 2</a></li>
+                <li><a href="page31.html">Day 3</a></li>
+                <li><a href="page4.html">Day 4 </a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <h1 id="headline"></h1>
+        <p id="content"></p>
+        <br>
+        <button onclick="domTree()">Do things with DOM-Tree</button>
+        <button onclick="getElement()">Do things with Get Element</button>
+    </article>
+    <article>
+        <input id="inputField" style="height: 50px;">
+        <button onclick="fillInput()">Do some magic!</button>
+    </article>
+    <article>
+        <form name="myForm">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email">
+            <p id="warningMessageEmail" style="color: red;"></p>
+        </form>
+    </article>
+    <article>
+        <h3>Type in a fancy page you want to visit!</h3>
+        <input id="inputFieldPage" style="height: 50px;">
+        <button onclick="goToPage()">Visit Page</button>
+        <p id="warningMessagePage" style="color: red;"></p>
+    </article>
+    <article>
+        <h3>There are some things here... But not yet.</h3>
+        <img id="axolotl">
+        <img id="birb">
+        <button onclick="assignImages()" id="appear-btn">Make them appear!</button>
+    </article>
+    <article>
+        <p id="last-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, molestiae? <br> What? I don't know. But wanna do something cool with buttons to this text??</p>
+        <br>
+        <div>
+            <button onclick="makeBold()" id="font-weight-btn">Make the text bold!</button>
+            <button onclick="putToTheLeft()" id="text-align-btn">Put it to the left!</button>
+            <button onclick="changeColor()" id="color-button">Chgange Colors!</button>
+        </div>
+    </article>
+    <script src="page4.js"></script>
+</body>
+</html>

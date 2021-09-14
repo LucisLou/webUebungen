@@ -40,11 +40,11 @@ nav ul {
     display: flex;
     list-style-type: none;
 
-    padding: 0;
+    padding: 5px;
 }
 
 nav li {
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
 nav a {
@@ -57,7 +57,7 @@ nav a:hover {
 }
 
 article {
-    padding: 10 px;
+    padding: 10px;
 }
 
 footer {
@@ -83,7 +83,8 @@ button {
     font-weight: bold;
     box-shadow: 0 9px rgb(0, 85, 85);
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 button:hover {
@@ -114,6 +115,16 @@ button:active {
 
 #readPersonButton {
     display: none;
+}
+
+img {
+    display: flex;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
