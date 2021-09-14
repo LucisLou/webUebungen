@@ -133,6 +133,7 @@ function changeColor() {
     } else {
         choice = 0;
         lastParagraph.style.color = colors[choice];
+        choice++;
     }
 
     if (!buttonPressed) {
