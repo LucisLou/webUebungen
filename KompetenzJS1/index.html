@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>🌑 - 📃 - ✂</title>
+</head>
+<body>
+    <header>
+        <h1>Rock - Paper - Scissors!</h1>
+    </header>
+    <article>
+        <h1 id="title">Let's Play!</h1>
+        <p id="game-text"></p>
+        <button id="start-btn" onclick="gameStart()">START</button>
+        
+        <div id="game-field" style="display: none;">
+            <input type="image" id="rock" src="img/rock.png" onclick="playerChoice(0)">
+            <input type="image" id="paper" src="img/paper.png" onclick="playerChoice(1)">
+            <input type="image" id="scissors" src="img/scissors.png" onclick="playerChoice(2)">
+        </div>
+
+        <h2 style="margin-top: 100px;">Results:</h1>
+        <ul id="results">
+        </ul>
+    </article>
+    <script src="index.js"></script>
+</body>
+</html>
