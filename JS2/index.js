@@ -51,7 +51,10 @@ function saveCookie(name, color, duration) {
 
     document.cookie = `userName=${name};${expiryDate}`;
     document.cookie = `favColor=${color};${expiryDate}`;
+
     $('#cookie-ask').hide();
+    
+    checkCookieUserAndColor();
 }
 
 function getCookieUser(cookieName) {
