@@ -43,11 +43,11 @@ function toggleDiv() {
 //Task 4 - Cookies (with extras because I like being extra)
 
 function saveCookie(name, color, duration) {
-    let date = new Date();
+    let date = new Date(); //grabs current date as value for date
 
     date.setTime(date.getTime() + (duration*24*60*60*1000)); //duration*24*60*60*1000 sets duration into milliseconds
 
-    let expiryDate = "expires=" + date.toGMTString();
+    let expiryDate = "expires=" + date.toGMTString(); //sets the expiry date to "expires= " + date in GTM String format to be used for setting the expiry date of thge cookie
 
     document.cookie = `userName=${name};${expiryDate}`;
     document.cookie = `favColor=${color};${expiryDate}`;
@@ -57,7 +57,7 @@ function saveCookie(name, color, duration) {
 function getCookieUser(cookieName) {
     cookieName += "=";
     let decCookie = decodeURIComponent(document.cookie);
-    let deCookieArr = decCookie.split(";");
+    let deCookieArr = decCookie.split(";"); //splits cookie at the ; so that only the content without the expiry date is read
     
     for (let i = 0; i < deCookieArr.length; i++) {
         let content = deCookieArr[i];
@@ -123,7 +123,7 @@ function checkCookieUserAndColor() {
       if (localStorage.getItem("userAge") && localStorage.getItem("favAnimal")) {
         age = localStorage.getItem("userAge");
         animal = localStorage.getItem("favAnimal");
-        message = `I got some info on you! <br> You're ${age} years old!<br> Your favorite animal is ${animal}!`;
+        message = `I got some info on you from the local storage! <br> You're ${age} years old!<br> Your favorite animal is ${animal}!`;
         $('#local-storage-div').hide();
       } else {
         $('#local-storage-div').show();
