@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2 - jQuery and JS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkCookieUserAndColor(); checkLocalStorage();">
+    <article>
+        <h2 id="greet-user"></h2>
+        <h3 id="their-fav-color"></h3>
+    </article>
+    <article>
+        <h1>Headline</h1>
+        <p></p>
+        <p></p>
+        <p></p>
+        <button onclick="changeTwo()">Button</button>
+    </article>
+    <article>
+        <div id="colored-div"></div>
+        <p></p>
+    </article>
+    <article>
+        <div id="colored-div-21">
+            <h6>This is a turquoise div.</h6>
+        </div>
+        <div id="colored-div-22">
+            <h6>This is a lovely soft orange-colored div.</h6>
+        </div>
+        <button onclick="toggleDiv()">Toggle Div</button>
+    </article>
+    <article>
+        <div id="local-storage-div">
+            <h3>Let's save stuff in local storage!</h3>
+            <h5>May I know your age?</h5>
+            <input id="user-age" name="user-age">
+            <br>
+            <h5>And what about your favorite animal?</h5>
+            <input id="user-animal" name="user-animal">
+            <br>
+            <br>
+            <button onclick="saveStorage(document.getElementById('user-age').value, document.getElementById('user-animal').value)">Save Info</button>
+        </div>
+        <div id="local-storage-result-div">
+            <h5 id="user-info"></h5>
+        </div>
+    </article>
+    <article id="cookie-ask">
+        <h3>Hi! This is the "save your cookies" field!</h3>
+        <h5>Input your name: </h5>
+        <input id="name" name="user-name">
+        <h5>Input your favourite color: </h5>
+        <input id="fav-color" name="fav-color">
+        <br>
+        <br>
+        <button onclick="saveCookie(document.getElementById('name').value, document.getElementById('fav-color').value, 30)">Save Info</button>
+    </article>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
