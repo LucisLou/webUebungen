@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkSave()">
+    <header>
+        <h1>MATH QUIZ!</h1>
+    </header>
+    <article id="level"><h1>LEVEL</h1></article>
+    <main id="game-field">
+        <div id="field1" class="field">
+            <h3>1</h3>
+        </div>
+        <div id="field2" class="field">
+            <h3>2</h3>
+        </div>
+        <div id="field3" class="field">
+            <h3>3</h3>
+        </div>
+        <div id="field4" class="field">
+            <h3>4</h3>
+        </div>
+        <div id="field5" class="field">
+            <h3>5</h3>
+        </div>
+        <div id="field6" class="field">
+            <h3>6</h3>
+        </div>
+        <div id="field7" class="field">
+            <h3>7</h3>
+        </div>
+        <div id="field8" class="field">
+           <h3>8</h3>
+        </div>
+        <div id="field9" class="field">
+            <h3>9</h3>
+        </div>
+    </main>
+    <h2 id="game-title-msg">Ready?</h2>
+    <button id="start" onclick="gameStart()">START</button>
+    <button id="continue" onclick="continueGame()">CONTINUE</button>
+    <article id="quiz-field">
+        <p id="challenge"></p>
+        <input id="user-answer">
+        <button id="answer-btn" onclick="checkAnswer()">ANSWER</button>
+        <p id="msg"></p>
+    </article>
+    <article id="win-box">
+        <h2>🎊 YOU WON! 🎊</h2>
+        <h3>Again?</h3>
+        <button id="restart-btn" onclick="restart()">RESTART</button>
+    </article>
+    <footer>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

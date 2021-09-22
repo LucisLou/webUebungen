@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: darkcyan;
+    box-sizing: content-box;
+    color: white;
+    width: 100%;
+    top: 0;
+}
+
+nav {
+    background-color: darkcyan;
+    color: white;
+
+    position: sticky;
+    top: 0;
+    padding-left: 10px;
+
+    text-align: left;
+
+    display: flex;
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+
+    padding: 5px;
+}
+
+nav li {
+    padding-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #F2A71B;
+}
+
+article {
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: darkcyan;
+    color: white;
+    box-sizing: content-box;
+    width: 100%;
+    margin-top: 15px;
+    bottom: 0;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: darkcyan;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 9px rgb(0, 85, 85);
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: rgb(0, 158, 158);
+}
+
+button:active {
+    background-color: rgb(0, 158, 158);
+    box-shadow: 0 5px rgb(0, 70, 70);
+    transform: translateY(4px);
+}
+
+img {
+    display: flex;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#game-field {
+    display: grid;
+    
+    grid-template-columns: 1/3;
+    grid-template-rows: 1/3;
+
+    grid-template-areas: 
+    "field1 field2 field3"
+    "field4 field5 field6"
+    "field7 field8 field9";
+    
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+#field1 {
+    grid-area: field1;
+}
+
+#field2 {
+    grid-area: field2;
+}
+
+#field3 {
+    grid-area: field3;
+}
+
+#field4 {
+    grid-area: field4;
+}
+
+#field5 {
+    grid-area: field5;
+}
+
+#field6 {
+    grid-area: field6;
+}
+
+#field7 {
+    grid-area: field7;
+}
+
+#field8 {
+    grid-area: field8;
+}
+
+#field9 {
+    grid-area: field9;
+}
+
+#field1, #field2, #field3, #field4, #field5, #field6, #field7, #field8, #field9 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #8C5C07;
+    border-radius: 10px;
+} 
+
+#quiz-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#win-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    width: 80%;
+    height: 60%;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+
+    background-color: darkcyan;
+    border-radius: 15px;
+}
+
+#restart-btn {
+    background-color: #D92516;
+    box-shadow: 0 9px #8C1107;
+
+}
+
+#restart-btn:hover {
+    background-color: #ff2b18;
+}
+
+#restart-btn:active {
+    background-color: #cc2213;
+    box-shadow: 0 5px #8C1107;
+    transform: translateY(4px);
+}
+
+
+@media screen and (min-width: 900px) {
+    #game-field {
+        grid-template-columns: 1/9;
+        grid-template-rows: 1/1;
+    
+        grid-template-areas:
+        "field1 field2 field3 field4 field5 field6 field7 field8 field9";
+    }
+}
