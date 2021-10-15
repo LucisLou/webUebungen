@@ -14,17 +14,23 @@
         <h1>Rock - Paper - Scissors!</h1>
     </header>
     <article>
-        <h1 id="title">Let's Play!</h1>
-        <p id="game-text"></p>
+        <h2 id="title">Let's Play!</h2>
+        <section>
+            <p id="game-text"></p>
+            <div>
+                
+            </div>
+        </section>
+        
         <button id="start-btn" onclick="gameStart()">START</button>
         
-        <div id="game-field" style="display: none;">
+        <section id="game-field" style="display: none;">
             <input type="image" id="rock" src="img/rock.png" onclick="playerChoice(0)">
             <input type="image" id="paper" src="img/paper.png" onclick="playerChoice(1)">
             <input type="image" id="scissors" src="img/scissors.png" onclick="playerChoice(2)">
-        </div>
+        </section>
 
-        <h2 style="margin-top: 100px;">Results:</h1>
+        <h3 style="margin-top: 100px;">Results:</h3>
         <ul id="results">
         </ul>
     </article>
