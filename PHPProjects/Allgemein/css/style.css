@@ -1,0 +1,433 @@
+/* Design - Font import*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Design - Color Theme in Hex */
+.Wild-Bard-1-hex { color: #243340; }
+.Wild-Bard-2-hex { color: #F2E527; }
+.Wild-Bard-3-hex { color: #F2D027; }
+.Wild-Bard-4-hex { color: #F2A516; }
+.Wild-Bard-5-hex { color: #D95204; }
+
+/* Design - Color Theme in RGBA */
+.Wild-Bard-1-rgba { color: rgba(35, 50, 63, 1); }
+.Wild-Bard-2-rgba { color: rgba(242, 228, 38, 1); }
+.Wild-Bard-3-rgba { color: rgba(242, 208, 38, 1); }
+.Wild-Bard-4-rgba { color: rgba(242, 165, 21, 1); }
+.Wild-Bard-5-rgba { color: rgba(216, 82, 4, 1); }
+
+/* Design - General Appearance */
+
+body {
+    font-family: 'Lato', sans-serif;
+
+    margin: 0;
+
+    color:#243340;
+    background-color: #F2D027;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    margin-bottom: 100px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 20px 10px 0;
+
+    width: 100%;
+
+    background-color: #243340;
+    color: whitesmoke;
+}
+
+nav {
+    font-size: larger;
+
+    /*display: flex;*/
+
+    padding: 10px 20px 10px 0;
+    margin-bottom: 10px;
+
+    background-color: #243340;
+    color: whitesmoke;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-end;
+
+    list-style-type: none;
+}
+
+nav li {
+    padding-left: 10px;
+}
+
+nav a {
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #F2E527;
+}
+
+.first-of-nav {
+    margin-right: auto;
+}
+
+.link-styled:hover {
+    color: #F2E527;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Fredoka One', cursive;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    -webkit-text-stroke: 3px #243340;
+    margin-bottom: 10px;
+}
+
+article {
+    width: 100%;
+
+    padding: 5px 0 5px 0;
+}
+
+table {
+    /* display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;*/
+
+    background-color: white;
+
+    border-radius: 10px;
+    padding: 10px 0 15px 0;
+
+    min-width: 40%;
+}
+
+tr {
+    box-sizing: border-box !important;
+}
+
+tr:first-child {
+    color: #D95204;
+}
+
+th {
+    box-sizing: border-box;
+
+    font-family: 'Fredoka One', cursive;
+    font-size: x-large;
+    font-weight: normal;
+
+    text-decoration: underline;
+
+    letter-spacing: 1px;
+}
+
+td {
+    text-align: center;
+    font-size: larger;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Design - Forms */
+
+form {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    color: black;
+    
+    align-items: center;
+    justify-content: center;
+
+    min-width: 80%;
+    margin: 5% auto 5% auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border-radius: 10px;
+
+    scroll-margin: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+form div input {
+    margin-bottom: 30px;
+}
+
+input {
+    width: 200px;
+    padding: 5px 5px 5px 10px;
+}
+
+/* Design - Buttons */
+
+button, .button-styled {
+    font-family: 'Lato', sans-serif;
+    font-size: larger;
+    color: white;
+
+    background-color: #D95204;
+
+    border-style: none;
+    border-radius: 5px;
+
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 50px;
+
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 9px #BF4904;
+
+    cursor: pointer;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+button:hover, .button-styled:hover {
+    cursor: pointer;
+    background-color: #E65705;
+}
+
+button:active, .button-styled:active {
+    background-color: #E65705;
+    box-shadow: 0 5px #BF4904;
+    transform: translateY(5px);
+}
+
+.button-styled-cancel {
+    font-family: 'Lato', sans-serif;
+    font-size: larger;
+    color: white;
+
+    background-color: #243340;
+
+    border-style: none;
+    border-radius: 5px;
+
+    min-width: 100px;
+    width: auto;
+    height: auto;
+
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 9px #1D2933;
+
+    cursor: pointer;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+.button-styled-cancel:hover {
+    background-color: #2B3D4D;
+}
+
+.button-styled-cancel:active {
+    background-color: #2B3D4D;
+    box-shadow: 0 5px #1D2933;
+    transform: translateY(5px);
+}
+
+/* Classes */
+
+.top {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    margin-bottom: 0;
+}
+
+/* IDs */
+
+/* IDs - index.php */
+
+#sign-in, #register {
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #2e2d2850;
+
+    border-radius: 10px;
+}
+
+/* IDs - main.php */
+
+#game-data {
+    display: flex;
+    flex-direction: row;
+
+    justify-content:space-evenly;
+}
+
+#settings {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#settings div {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 20px
+}
+
+#tries, #upper-limit {
+    width: 50px;
+    margin-top: 10px;
+}
+
+#data-tries {
+    margin-right: 20px;
+}
+
+#game-field {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    align-items: center;
+}
+
+#guess {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    font-size: x-large;
+
+    min-height: 100px;
+}
+
+#game-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#history-area {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 25px;
+}
+
+#history, #game-over, #game-won {
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #2e2d2850;
+
+    border-radius: 10px;
+}
+
+#history section, #game-over section, #game-won section {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    height: 90%;
+    top: 10%;
+
+    background-color: white;
+
+    border-radius: 10px;
+}
+
+#history-content {
+    overflow: auto;
+}
+
+/* IDs - leaderboard.php */
+
+#scores {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 900px)  {
+    
+    table {
+        width: 80%;
+    }
+}
